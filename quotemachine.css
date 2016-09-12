@@ -1,0 +1,172 @@
+
+@import 'https://fonts.googleapis.com/css?family=Just+Another+Hand';
+
+*{
+	font-family:'Just Another Hand', cursive;
+
+}
+body {
+	background-color:#f1f1f2;
+	margin:0;
+}
+header{
+margin-top:25px;
+	
+}
+hr{
+    border: 0;
+    height: 3px;
+   
+    background-image: linear-gradient(to right, rgba(0,0,0,0), #bcbabe, rgba(0,0,0,0));
+
+}
+h1{
+	color:#bcbabe;
+	font-size:50px;
+	background-color:#f1f1f2;
+	font-weight:normal;
+	text-align:center;
+}
+.overall{
+  margin:0 auto;
+  width:800px;
+}
+.circle{
+border: 5px solid #1995ad;
+  background:#a1d6e2;
+  height:500px;
+  width:500px;
+  border-radius:50%;
+  margin:50px auto 0px auto;
+ text-align:center;/*ul centering*/
+ position:relative;
+
+}
+
+.circle ul{
+	
+position:absolute;
+margin-top:50px;
+  width:500px;/*Minimum should be height of list circles?*/ 
+  list-style-type:none;
+  padding-left:0px;/*To remove indentation*/
+margin-left:auto;
+  margin-right:auto;
+ 
+/*Trial and error shows that this works, aong with the margin-top, but why?*/
+  margin-bottom:0;
+  height:500px;
+}
+.circle ul img{
+		
+	width:65px;
+	height:65px;
+	opacity:0.6;
+	transition:all 0.4s ease-in-out;
+}
+
+.disp{
+	color:#bcbabe;
+	font-size:40px;
+
+	width:500px;
+	margin:0 auto;
+}
+.disp #quote{
+text-align:center;
+	display:block;
+}
+.disp #twitter{
+	float:left;
+	display:inline-block;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	cursor:hand;
+	opacity:0.7;
+	transition:all 0.2s ease;
+}
+.disp #twitter:hover{
+	
+	transform:scale(1.2);
+	opacity:1;
+}
+.disp #speaker{
+	float:right;
+	display:inline-block;
+	text-align:right;
+	display:block;
+	font-style:italic;
+	font-size:30px;
+}
+.clear{
+	clear:both;
+}
+
+.circle li{
+
+/*centering ul*/
+  text-align:center;
+  /*Must be height of div height*/
+  font-size:30px;
+line-height:40px;
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  color:#1995ad;
+  background-color:#a1d6e2;
+  }
+.circle .option{
+		cursor:pointer;
+	cursor:hand;
+	transition:all 0.3s ease-in-out;
+}
+.circle #random{
+	transition:all 0.4s ease-in-out;
+}
+.circle .option:hover{
+	transform:scale(1.2);
+
+}
+.circle .option:hover img{opacity:1;}
+.circle #random:hover{
+transform:scale(1.4);
+}
+.circle .caption{
+	display:block;
+}
+.circle li:nth-child(1){
+	
+margin:0px auto 0px auto;
+}
+.circle li:nth-child(2){
+  display:inline-block;
+  margin:50px 50px 0px 0px;
+}
+.circle li:nth-child(3){
+  display:inline-block;
+  margin-right:50px;
+}
+.circle li:nth-child(4){
+  display:inline-block;
+  
+}
+.circle li:nth-child(5){
+
+margin:50px auto 0px auto;}
+footer{
+	margin-top:50px;
+	padding:10px 30px;
+	background-color:#bcbabe;
+	color:#f1f1f2;
+	font-size:30px;
+	
+}
+footer .credits{
+	float:right;
+}
+footer .designer{
+
+	float:left;
+}
+
