@@ -127,7 +127,7 @@ function changeTweet(){
 			$("#quote").fadeIn("slow");
 		$("#speaker").fadeIn("slow");
 		
-      
+       
 	});
 
 	
