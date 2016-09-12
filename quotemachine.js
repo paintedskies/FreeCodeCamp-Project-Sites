@@ -4,8 +4,8 @@ var design=[];
 var computer=[];
 var nature=[];
 var life=[];
-setup("http://crossorigin.me/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40",design);
-setup("http://crossorigin.me/http://quotes.stormconsultancy.co.uk/quotes.json",computer);
+setup("https://crossorigin.me/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40",design);
+setup("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/quotes.json",computer);
 setupnature();
 setuplife();
 changeTweet();
@@ -97,7 +97,7 @@ function changeTweet(){
 
 	$("#random").on("click",function(){
 		var rankey=Math.floor(Math.random()*999998+1);
-		var senturl="http://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+rankey+"&format=json&lang=en";
+		var senturl="https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key="+rankey+"&format=json&lang=en";
 		$.getJSON(senturl, function(json) {
 
 			$("#quote").html(json["quoteText"]).hide();
@@ -118,7 +118,7 @@ function changeTweet(){
 
 	$("#design").on("click",function(){
 		if(design.length===0){
-			setup("http://crossorigin.me/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40",design);
+			setup("https://crossorigin.me/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40",design);
 		}
 		var current=design.pop();
 	$("#quote").html(current.content).hide();
@@ -133,7 +133,7 @@ function changeTweet(){
 	
 	$("#computer").on("click",function(){
 		if(computer.length===0){
-			setup("http://crossorigin.me/http://quotes.stormconsultancy.co.uk/quotes.json",computer);
+			setup("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/quotes.json",computer);
 		}
 		var current=computer.pop();
 	$("#quote").html(current.quote).hide();
